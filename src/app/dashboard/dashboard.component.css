@@ -253,8 +253,8 @@ body {
   }
 
 .example-action-button{
-  margin-left: 595px;
-  border:solid;
+  margin-left: 635px;
+  /* border:solid; */
   padding:0%;
 }
 
