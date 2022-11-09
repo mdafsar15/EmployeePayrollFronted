@@ -5,6 +5,10 @@
         <div class="emp-detail-text">
             Employee Details 
         </div>
+        <div><button mat-raised-button class="example-action-button">
+            <img src="../../assets/search.png">
+    </button>
+    </div>
         <button mat-button (click) = "btnClick()"><img src="../../assets/add-24px.svg"> Add user</button>
     </div>
     <div class="table-main">
@@ -17,7 +21,7 @@
                 <th>{{this.startDate}}</th>
                 <th>Actions</th>
             </tr>
-            <tr *ngFor="let employee of employees">
+            <tr *ngFor="let employee of allEmp">
                 <td>{{employee.name}}</td>
                 <td>{{employee.gender}}</td>
                 <td>{{employee.department}}</td>

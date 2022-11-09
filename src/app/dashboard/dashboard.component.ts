@@ -12,15 +12,6 @@ export class DashboardComponent implements OnInit {
 
   allEmp:Array<any> = [];
 
-  employees:Employee[] =[ 
-  new Employee("shree", new Date, "Female", ["HR", "Sales"], 1000),
-  new Employee("shree", new Date, "Female", ["Engineer", "Sales"], 2000),
-  new Employee("shree", new Date, "Female", ["HR", "Sales"], 3000),
-  new Employee("shree", new Date, "Female", ["Finance", "Sales"], 4000),
-  new Employee("shree", new Date, "Female", ["HR", "Sales"], 5000),
-  new Employee("shree", new Date, "Female", ["HR", "Sales"], 6000),
-  new Employee("shree", new Date, "Female", ["HR", "Sales"], 7000),];
-  // constructor(private router: Router) { }
 
 
   countNumber:any = 0;
