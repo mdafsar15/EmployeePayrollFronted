@@ -16,21 +16,21 @@
         <mat-radio-group [(ngModel)]="employee.profilePic" [ngModelOptions]="{standalone:true}" ngDefaultControl
             aria-label="Select an option" class="profilePic">
             <label class="label text" for="name">Profile Picture</label>
-            <mat-radio-button value="{{imgUrl_1}}"><img [src]="imgUrl_1" class="profile-img" alt="Bridgelabz Logo" />
+            <mat-radio-button class="img1" value="{{imgUrl_1}}"><img [src]="imgUrl_1" class="profile-img" alt="Bridgelabz Logo" />
             </mat-radio-button>
-            <mat-radio-button value="{{imgUrl_2}}"><img [src]="imgUrl_2" class="profile-img" alt="Bridgelabz Logo" />
+            <mat-radio-button class="img1" value="{{imgUrl_2}}"><img [src]="imgUrl_2" class="profile-img" alt="Bridgelabz Logo" />
             </mat-radio-button>
-            <mat-radio-button value="{{imgUrl_3}}"><img [src]="imgUrl_3" class="profile-img" alt="Bridgelabz Logo" />
+            <mat-radio-button class="img1" value="{{imgUrl_3}}"><img [src]="imgUrl_3" class="profile-img" alt="Bridgelabz Logo" />
             </mat-radio-button>
-            <mat-radio-button value="{{imgUrl_4}}"><img [src]="imgUrl_4" class="profile-img" alt="Bridgelabz Logo" />
+            <mat-radio-button class="img1" value="{{imgUrl_4}}"><img [src]="imgUrl_4" class="profile-img" alt="Bridgelabz Logo" />
             </mat-radio-button>
         </mat-radio-group>
 
         <div class="row-content">
             <mat-radio-group [(ngModel)]="employee.gender" [ngModelOptions]="{standalone:true}" ngDefaultControl>
                 <label class="label text">Gender</label>
-                <mat-radio-button value="male">Male</mat-radio-button>
-                <mat-radio-button value="female">Female</mat-radio-button>
+                <mat-radio-button class="img1" value="male">Male</mat-radio-button>
+                <mat-radio-button class="img1" value="female">Female</mat-radio-button>
             </mat-radio-group>
         </div>
 
@@ -61,7 +61,7 @@
         <div class="row-content">
             <label class="label text" for="department">Department</label>
             <div *ngFor="let departName of depart2,let i = index ">
-                <mat-checkbox [value]="this.employee.department[i]"  (ngModel)="departName" 
+                <mat-checkbox class="img1" [value]="this.employee.department[i]"  (ngModel)="departName" 
                     [ngModelOptions]="{standalone: true}" ngDefaultControl> {{departName}} </mat-checkbox>
             </div>
         </div>
